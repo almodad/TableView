@@ -14,6 +14,9 @@
 
 @implementation AppDelegate
 
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -40,6 +43,20 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Core Data Delegate Methods
+
+-(NSManagedObjectContext *) managedObjectContext {
+    if(_managedObjectContext != nil){
+        return _managedObjectContext;
+    }
+    NSPersistentStoreCoordinator *coodinator = [self persistentStoreCoordinator];
+    if(coodinator != nil){
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator:coodinator];
+    }
+    return _managedObjectContext;
 }
 
 @end
