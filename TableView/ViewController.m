@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "model/Language.h"
+#import "DetailViewController.h"
 @interface ViewController ()
 
 @end
@@ -83,6 +84,19 @@
     return cell;
     
 }
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSInteger index = [self.languageView indexPathForSelectedRow].row;
+    if([segue.identifier isEqualToString:@"Details"]){
+        [(DetailViewController *)segue.destinationViewController setLanguage:
+         [self objectInListAtIndex:index]];
+    }
+}
+
+-(Language *) objectInListAtIndex: (NSUInteger) index{
+    return [languages objectAtIndex:index];
+}
+
 @end
 
 

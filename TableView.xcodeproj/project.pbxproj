@@ -22,6 +22,7 @@
 		A6F8AF401D37D1CA008D2274 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AF3F1D37D1CA008D2274 /* Language.m */; };
 		A6F8AF4C1D38BCF5008D2274 /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AF4B1D38BCF5008D2274 /* AddNewViewController.m */; };
 		A6F8AF4F1D3D09B3008D2274 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AF4D1D3D09B3008D2274 /* Database.xcdatamodeld */; };
+		A6F8AF551D3E204D008D2274 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F8AF541D3E204D008D2274 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		A6F8AF4A1D38BCF5008D2274 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
 		A6F8AF4B1D38BCF5008D2274 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
 		A6F8AF4E1D3D09B3008D2274 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		A6F8AF531D3E204D008D2274 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A6F8AF541D3E204D008D2274 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				A6F8AF041D37B65B008D2274 /* ViewController.h */,
 				A6F8AF051D37B65B008D2274 /* ViewController.m */,
 				A6F8AF4A1D38BCF5008D2274 /* AddNewViewController.h */,
+				A6F8AF531D3E204D008D2274 /* DetailViewController.h */,
+				A6F8AF541D3E204D008D2274 /* DetailViewController.m */,
 				A6F8AF4B1D38BCF5008D2274 /* AddNewViewController.m */,
 				A6F8AF421D37D2BF008D2274 /* model */,
 				A6F8AF071D37B65B008D2274 /* Main.storyboard */,
@@ -130,7 +135,6 @@
 				A6F8AF0C1D37B65C008D2274 /* LaunchScreen.storyboard */,
 				A6F8AF0F1D37B65C008D2274 /* Info.plist */,
 				A6F8AEFE1D37B65B008D2274 /* Supporting Files */,
-				A6F8AF4D1D3D09B3008D2274 /* Database.xcdatamodeld */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -138,6 +142,7 @@
 		A6F8AEFE1D37B65B008D2274 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6F8AF4D1D3D09B3008D2274 /* Database.xcdatamodeld */,
 				A6F8AEFF1D37B65B008D2274 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -321,6 +326,7 @@
 				A6F8AF031D37B65B008D2274 /* AppDelegate.m in Sources */,
 				A6F8AF4F1D3D09B3008D2274 /* Database.xcdatamodeld in Sources */,
 				A6F8AF001D37B65B008D2274 /* main.m in Sources */,
+				A6F8AF551D3E204D008D2274 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
